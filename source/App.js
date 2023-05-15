@@ -1,6 +1,16 @@
-/**
- * Search Component: A React component that takes the input from user and provides suggestions in intellisens.
+/** @author Prashant Bansod
+ * 15 May 2023
+ *                                    **Search Component**
+ * Searching is now an important functionality for including searches across the websites for 
+ * various assets or services. A search component is an important front end component that takes care of 
+ * user input for searching required assets.
+ * 
+ * This searching component is specifically developed for generalized or configured component to be used in
+ * any of the other websites or web applications.
+ * 
+ * This react component that takes the input from user and provides suggestions in intellisense.
  * It allows to select data from intellisense and put it in the text box to search. 
+ * 
  * Features:
  * 1. User knows already present data which system knows for effective search.
  * 2. Intellisense provides feature to not to type anything as it shows already present data.
@@ -20,16 +30,6 @@ const dataList  =
 
 function App() {
 
-  // const [dataList, setPost] = useState(null);
-
-  // useEffect(() => {
-  //   axios.get("/data.json").then((response) => {
-  //     setPost(response.data);
-  //     console.log("response.data"+response.data);
-  //   });
-  // }, []);
-
-  //console.log("dataList"+dataList.map( (item)=>{<p>(item.firstName)</p>}  ));
 
   const[showIntellisense,setShowIntellisense] = useState(false);
   const[txtSearchValue,setTxtSearchValue] = useState('');
